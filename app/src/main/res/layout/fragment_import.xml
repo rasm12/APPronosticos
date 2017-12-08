@@ -1,0 +1,396 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="richard.com.navigationdrawer_demo.ImportFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- row 1 -->
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:entries="@array/combo"
+            android:id="@+id/select"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#58D3F7"
+            android:textColor="#B40431"
+            android:padding="16dp"
+            android:text="FECHA 1"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Procesar" />
+        <!-- row 1 end -->
+
+
+        <!-- row 2 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <!-- col 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/equipo1"
+                    android:src="@mipmap/ic_launcher" />
+
+
+            </LinearLayout>
+            <!-- col 1 end -->
+
+            <!-- col 2 -->
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!-- col 2 end -->
+
+            <!-- col 3 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/equipo2"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <!-- col 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/equipo3"
+                    android:src="@mipmap/ic_launcher" />
+
+
+            </LinearLayout>
+            <!-- col 1 end -->
+
+            <!-- col 2 -->
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!-- col 2 end -->
+
+            <!-- col 3 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/equipo4"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <!-- col 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/equipo5"
+                    android:src="@mipmap/ic_launcher" />
+
+
+            </LinearLayout>
+            <!-- col 1 end -->
+
+            <!-- col 2 -->
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!-- col 2 end -->
+
+            <!-- col 3 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/equipo6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <!-- col 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/equipo7"
+                    android:src="@mipmap/ic_launcher" />
+
+
+            </LinearLayout>
+            <!-- col 1 end -->
+
+            <!-- col 2 -->
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!-- col 2 end -->
+
+            <!-- col 3 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/equipo8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <!-- col 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/equipo9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/ic_launcher" />
+
+
+            </LinearLayout>
+            <!-- col 1 end -->
+
+            <!-- col 2 -->
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!-- col 2 end -->
+
+            <!-- col 3 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/equipo10"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <!-- col 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/equipo11"
+                    android:src="@mipmap/ic_launcher" />
+
+
+            </LinearLayout>
+            <!-- col 1 end -->
+
+            <!-- col 2 -->
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spinner12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!-- col 2 end -->
+
+            <!-- col 3 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/equipo12"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <!-- col 1 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/cargar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="CARGAR" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

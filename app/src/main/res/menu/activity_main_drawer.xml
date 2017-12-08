@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pronostico"
+            android:icon="@drawable/pronosticar"
+            android:title="Pronosticar" />
+        <item
+            android:id="@+id/posiciones"
+            android:icon="@drawable/posiciones"
+            android:title="Posiciones" />
+        <item
+            android:id="@+id/resultados"
+            android:icon="@drawable/resultados"
+            android:title="Resultados" />
+        <item
+            android:id="@+id/nav_estadistica"
+            android:icon="@drawable/estadistica"
+            android:title="Estadistica" />
+        <item
+            android:id="@+id/nav_Calendario"
+            android:icon="@drawable/calendar"
+            android:title="Calendario" />
+
+
+    </group>
+
+    <item android:title="Extras" android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartir" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Configuracion Usuario" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>

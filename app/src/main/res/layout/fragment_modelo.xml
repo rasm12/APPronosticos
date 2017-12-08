@@ -1,0 +1,420 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fr1"
+    tools:context="richard.com.navigationdrawer_demo.ImportFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <!-- row 1 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+            android:background="#F6F3EA">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#F6F3EA"
+                android:orientation="vertical">
+
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/GridLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Match 1"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="Cerro Porteño"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:text="Libertad"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:text="0-0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="center"
+                        android:layout_row="2"
+                        android:entries="@array/combo" />
+
+                </GridLayout>
+
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/GridLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Match 2"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="Cerro Porteño"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:text="Libertad"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:text="0-0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="center"
+                        android:layout_row="2"
+                        android:entries="@array/combo" />
+
+                </GridLayout>
+
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/GridLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Match 3"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="Cerro Porteño"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:text="Libertad"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:text="0-0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="center"
+                        android:layout_row="2"
+                        android:entries="@array/combo" />
+                </GridLayout>
+
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/GridLayout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Match 4"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_columnSpan="3"
+                    android:background="#636363"
+                    android:textColor="#d5d5d5"
+                    android:gravity="center_horizontal"
+                    android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="Cerro Porteño"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:text="Libertad"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:text="0-0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="center"
+                        android:layout_row="2"
+                        android:entries="@array/combo" />
+
+                </GridLayout>
+
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/GridLayout5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Match 5"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="Cerro Porteño"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:text="Libertad"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:text="0-0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="center"
+                        android:layout_row="2"
+                        android:entries="@array/combo" />
+
+                </GridLayout>
+
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/GridLayout6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Match 6"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="Cerro Porteño"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:text="Libertad"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:text="0-0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="center"
+                        android:layout_row="2"
+                        android:entries="@array/combo" />
+
+                </GridLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,212 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="richard.com.navigationdrawer_demo.ImportFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <!-- row 1 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            android:background="#F6F3EA">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#F6F3EA"
+                android:orientation="vertical">
+
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_columnSpan="3"
+                        android:layout_row="0"
+                        android:background="#636363"
+                        android:gravity="center_horizontal"
+                        android:text="Match 1"
+                        android:textColor="#d5d5d5"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/eq1"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_column="0"
+                        android:layout_gravity="right"
+                        android:layout_row="1"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/spinner_width"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_row="1"
+                        android:padding="10dp"
+                        android:textAlignment="center">
+
+                        <RadioGroup
+                            android:id="@+id/toggleGroup1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ToggleButton
+                                android:id="@+id/btn_local1"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:textOff="L"
+                                android:textOn="L"
+                                android:textSize="14sp" />
+
+                            <ToggleButton
+                                android:id="@+id/btn_empate1"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:textOff="X"
+                                android:textOn="X"
+                                android:textSize="14sp" />
+
+                            <ToggleButton
+                                android:id="@+id/btn_visita1"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textOff="V"
+                                android:textOn="V" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/eq2"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_column="2"
+                        android:layout_row="1"
+                        android:scaleType="fitXY"
+
+                        android:src="@mipmap/ic_launcher"></ImageView>
+
+                </GridLayout>
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_columnSpan="3"
+                        android:layout_row="0"
+                        android:background="#636363"
+                        android:gravity="center_horizontal"
+                        android:text="Match 1"
+                        android:textColor="#d5d5d5"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/eq3"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_column="0"
+                        android:layout_gravity="right"
+                        android:layout_row="1"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/spinner_width"
+                        android:layout_column="1"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="0dp"
+                        android:layout_row="1"
+                        android:padding="10dp"
+                        android:textAlignment="center">
+
+                        <RadioGroup
+                            android:id="@+id/toggleGroup2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ToggleButton
+                                android:id="@+id/btn_local2"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:textOff="L"
+                                android:textOn="L"
+                                android:textSize="14sp" />
+
+                            <ToggleButton
+                                android:id="@+id/btn_empate2"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:textOff="X"
+                                android:textOn="X"
+                                android:textSize="14sp" />
+
+                            <ToggleButton
+                                android:id="@+id/btn_visita2"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textOff="V"
+                                android:textOn="V" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/eq4"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_column="2"
+                        android:layout_row="1"
+                        android:scaleType="fitXY"
+
+                        android:src="@mipmap/ic_launcher"></ImageView>
+
+                </GridLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="Resumen" />
+    </TableRow>
+
+    <TableRow
+        android:background="#162E58"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="Nro. Partido" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:text="Partido"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="1dp"
+            android:textAlignment="center"
+
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+            android:textSize="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Resultado" />
+    </TableRow>
+
+    <TableRow
+        android:background="#ECEFF1"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cNro1"
+            android:layout_weight="1"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cPartido1"
+            android:padding="5dp"
+            android:text="Equipo1 Vs Equipo2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cRs1"
+            android:layout_weight="1"
+            android:text="Empate" />
+    </TableRow>
+
+    <TableRow
+        android:background="#ECEFF1"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cNro2"
+            android:text="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cPartido2"
+            android:layout_weight="1"
+            android:text="Equipo 1 Vs Equipo2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cRs2"
+            android:layout_weight="1"
+            android:text="Empate" />
+    </TableRow>
+
+    <TableRow
+        android:background="#ECEFF1"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cNro3"
+            android:text="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cPartido3"
+            android:layout_weight="1"
+            android:text="Equipo 1 Vs Equipo2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cRs3"
+            android:layout_weight="1"
+            android:text="Empate" />
+    </TableRow>
+    <TableRow
+        android:background="#ECEFF1"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cNro4"
+            android:text="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cPartido4"
+            android:text="Equipo 1 Vs Equipo2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cRs4"
+            android:layout_weight="1"
+            android:text="Empate" />
+    </TableRow>
+
+    <TableRow
+        android:background="#ECEFF1"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cNro5"
+            android:text="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cPartido5"
+            android:layout_weight="1"
+            android:text="Equipo 1 Vs Equipo2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cRs5"
+            android:layout_weight="1"
+            android:text="Empate" />
+    </TableRow>
+
+    <TableRow
+        android:background="#ECEFF1"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cNro6"
+            android:text="6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/cPartido6"
+            android:text="Equipo 1 Vs Equipo2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cRs6"
+            android:layout_weight="1"
+            android:text="Empate" />
+    </TableRow>
+
+    <TableRow
+        android:background="#162E58"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/dialogo_confirmar"
+            android:text="Confirmar" />
+
+
+        <Button
+            android:id="@+id/dialogo_cerrar"
+            android:layout_marginLeft="40dp"
+            android:text="Cerrar" />
+    </TableRow>
+</TableLayout>

@@ -45,7 +45,6 @@ public class PosicionesFragment extends Fragment {
         HttpAsyncTask thread = new HttpAsyncTask(getContext(), progressDialog);
         thread.execute(resource);
 
-
         return view;
     }
 

@@ -109,7 +109,7 @@ public class LoginTemplate extends AppCompatActivity implements View.OnClickList
             String password = parametros[1];
 
             StringBuilder full = new StringBuilder();
-            full.append("user=").append(usuario).append("&password=").append(password);
+            full.append("user=").append(usuario.trim()).append("&password=").append(password.trim());
 
             System.out.println("############ USUARIO ############## " + usuario);
             System.out.println("############ PASSWORD ############## " + password);

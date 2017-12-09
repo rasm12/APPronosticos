@@ -54,9 +54,9 @@ public class RegistrarUsuario extends AppCompatActivity implements View.OnClickL
             String email = ((EditText) findViewById(R.id.input_email)).getText().toString();
 
             RegistroUsuario registroUsuario = new RegistroUsuario();
-            registroUsuario.setNombre(nombre);
-            registroUsuario.setLogin(login);
-            registroUsuario.setPassword(pass1);
+            registroUsuario.setNombre(nombre.trim());
+            registroUsuario.setLogin(login.trim());
+            registroUsuario.setPassword(pass1.trim());
 
             httpAsyncTask.execute(registroUsuario);
         }

@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         FragmentManager fragment = getSupportFragmentManager();
-        fragment.beginTransaction().replace(R.id.contendor, new DosFragment()).commit();
+        fragment.beginTransaction().replace(R.id.contendor, new ModeloFragmentDos()).commit();
 
     }
 

@@ -56,7 +56,7 @@ public class ResultadosFragment extends Fragment {
             String fecha = parametros[0];
 
             try {
-                String respuesta = UtilsConexion.sendGet("/pronosticos/resultadosPDO.php?fecha="+fecha);
+                String respuesta = UtilsConexion.sendGet("/pronosticos/resultadosPDO.php?fecha=0");
                 if (respuesta != null) {
                     response = UtilsConexion.jsonAObjetoJava(ResultadosRespuesta.class, respuesta);
                 }
@@ -83,6 +83,7 @@ public class ResultadosFragment extends Fragment {
                     vista.setVisibility(View.VISIBLE);
                     byte it = 0;
                     FragmentActivity fragmentActivity = getActivity();
+                    ((TextView)fragmentActivity.findViewById(R.id.req1)).setText("Fecha Nro: " + respuesta.getLstResultados().get(0).getFecha().toString());
                     for (Resultados resultados : respuesta.getLstResultados()){
                         it++;
                         switch (it){

@@ -7,10 +7,13 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +29,8 @@ public class ResultadosFragment extends Fragment {
 
     private ProgressDialog progressDialog = null;
     private View vista;
+    private ListView listView;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,25 +40,51 @@ public class ResultadosFragment extends Fragment {
         vista = inflater.inflate(R.layout.resultados_fragment, container, false);
         vista.setVisibility(View.INVISIBLE);
 
-        progressDialog = UtilsConexion.getProgressDialog(getContext(), "Resultados", "Procesando solicitud");
-        AsyncResultados asyncResultados = new AsyncResultados(progressDialog, getContext());
-        asyncResultados.execute("1");
+        dCerrar = vista.findViewById(R.id.selectFechaBoton);
+        dCerrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                generarDialogo();
+            }
+        });
+
+        generarResultados("0");
 
         return vista;
+    }
+
+
+    private void generarResultados(String fecha) {
+        progressDialog = UtilsConexion.getProgressDialog(getContext(), "Resultados", "Procesando solicitud");
+        AsyncResultados asyncResultados = new AsyncResultados(progressDialog, getContext());
+        asyncResultados.execute(fecha);
     }
 
     private Dialog dialogo;
     private Button dConfirmar;
     private Button dCerrar;
 
+
     private void generarDialogo() {
         dialogo = new Dialog(getContext());
         dialogo.setContentView(R.layout.select_fecha_layout);
-        dialogo.setTitle("Confirmar Resultados");
 
-        dConfirmar = (Button) dialogo.findViewById(R.id.dialogo_confirmar);
-        dCerrar = (Button) dialogo.findViewById(R.id.dialogo_cerrar);
+
+        dCerrar = (Button) dialogo.findViewById(R.id.sfCerrar);
         dCerrar.setEnabled(true);
+
+        listView = dialogo.findViewById(R.id.fecha_select);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(getContext(), "" + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_LONG).show();
+                generarResultados(adapterView.getItemAtPosition(i).toString());
+                dialogo.cancel();
+            }
+        });
+
+        dialogo.show();
 
         //listener
         dCerrar.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +115,7 @@ public class ResultadosFragment extends Fragment {
             String fecha = parametros[0];
 
             try {
-                String respuesta = UtilsConexion.sendGet("/pronosticos/resultadosPDO.php?fecha=0");
+                String respuesta = UtilsConexion.sendGet("/pronosticos/resultadosPDO.php?fecha=" + fecha);
                 if (respuesta != null) {
                     response = UtilsConexion.jsonAObjetoJava(ResultadosRespuesta.class, respuesta);
                 }
@@ -123,6 +154,7 @@ public class ResultadosFragment extends Fragment {
                                 // MARCADORES
                                 ((TextView) fragmentActivity.findViewById(R.id.gol_local1)).setText((resultados.getGolLocal() != null) ? resultados.getGolLocal().toString() : "0");
                                 ((TextView) fragmentActivity.findViewById(R.id.gol_visita1)).setText((resultados.getGolVisita() != null) ? resultados.getGolVisita().toString() : "0");
+
 
                                 // GANADOR DEL JUEGO
                                 ((TextView) fragmentActivity.findViewById(R.id.ganador_1)).setText((resultados.getGanador() != null) ? resultados.getGanador().toString() : "EMPATE");

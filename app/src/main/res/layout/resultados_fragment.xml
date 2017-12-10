@@ -1,560 +1,580 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="richard.com.navigationdrawer_demo.ImportFragment">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <!-- row 1 -->
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="15dp"
-            android:orientation="vertical">
-            android:background="#F6F3EA">
+            android:layout_marginTop="3dp">
 
-
+            <!-- row 1 -->
 
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:background="#F6F3EA"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
                 android:orientation="vertical">
-
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
-
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
+                android:background="#F6F3EA">
 
 
-                    <TextView
-                        android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#F6F3EA"
+                    android:orientation="vertical">
+
+                    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+
+                        android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/cabfecha"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:textSize="30dp"
-                        android:text="Fecha" />
-
-                </GridLayout>
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="4">
 
 
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:orientation="vertical">
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
+                            <Button
+                                android:id="@+id/selectFechaBoton"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Seleccionar Fecha" />
+                        </LinearLayout>
 
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:id="@+id/ganador_1"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="90dp"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:id="@+id/req1"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:gravity="center"
-                        android:textAlignment="center"
-                        android:text="Equipo Local"
-                        android:layout_gravity="right"
-                        />
+                    </GridLayout>
 
 
-                    <LinearLayout
+                    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#F6F3EA"
                         android:layout_gravity="center"
-                        android:layout_column="1"
-                        android:layout_row="1"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:orientation="horizontal">
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="4">
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:textSize="20dp"
-                            android:id="@+id/gol_local1"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:id="@+id/ganador_1"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_columnSpan="3"
+                            android:layout_row="0"
+                            android:background="#636363"
+                            android:gravity="center_horizontal"
+                            android:textColor="#d5d5d5"
+                            android:textSize="16sp" />
+
                         <TextView
+                            android:id="@+id/req1"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="0"
+                            android:layout_gravity="right"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo Local"
+                            android:textAlignment="center" />
+
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
-                            android:text="-"
-                            android:textSize="20dp"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_row="1"
+                            android:background="#F6F3EA"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/gol_local1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="-"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/gol_visita1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:id="@+id/gol_visita1"
-                            android:padding="10dp"
-                            android:textSize="20dp"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
+                            android:id="@+id/req2"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo visitante"
+                            android:textAlignment="center"></TextView>
 
-                    <TextView
-                        android:id="@+id/req2"
-                        android:layout_width="90dp"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:layout_column="2"
-                        android:layout_gravity="center"
-                        android:text="Equipo visitante"
-                        android:textAlignment="center"
-                        android:gravity="center"
-                        android:layout_row="1"></TextView>
-
-                </GridLayout>
+                    </GridLayout>
 
 
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
+                    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:id="@+id/ganador_2"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:id="@+id/req3"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:gravity="center"
-                        android:text="Equipo Local"
-                        android:layout_gravity="right"
-                        />
-
-
-                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#F6F3EA"
                         android:layout_gravity="center"
-                        android:layout_column="1"
-                        android:layout_row="1"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:orientation="horizontal">
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="4">
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:textSize="20dp"
-                            android:id="@+id/gol_local2"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:id="@+id/ganador_2"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_columnSpan="3"
+                            android:layout_row="0"
+                            android:background="#636363"
+                            android:gravity="center_horizontal"
+                            android:textColor="#d5d5d5"
+                            android:textSize="16sp" />
+
                         <TextView
+                            android:id="@+id/req3"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="0"
+                            android:layout_gravity="right"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo Local"
+                            android:textAlignment="center" />
+
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
-                            android:text="-"
-                            android:textSize="20dp"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_row="1"
+                            android:background="#F6F3EA"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/gol_local2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="-"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/gol_visita2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:id="@+id/gol_visita2"
-                            android:padding="10dp"
-                            android:textSize="20dp"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
+                            android:id="@+id/req4"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo visitante"
+                            android:textAlignment="center"></TextView>
 
-                    <TextView
-                        android:id="@+id/req4"
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:layout_column="2"
-                        android:layout_gravity="center"
-                        android:text="Equipo visitante"
-                        android:gravity="center"
-                        android:layout_row="1"></TextView>
-
-                </GridLayout>
+                    </GridLayout>
 
 
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
+                    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:id="@+id/ganador_3"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:id="@+id/req5"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:gravity="center"
-                        android:text="Equipo Local"
-                        android:layout_gravity="right"
-                        />
-
-
-                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#F6F3EA"
                         android:layout_gravity="center"
-                        android:layout_column="1"
-                        android:layout_row="1"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:orientation="horizontal">
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="4">
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:textSize="20dp"
-                            android:id="@+id/gol_local3"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:id="@+id/ganador_3"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_columnSpan="3"
+                            android:layout_row="0"
+                            android:background="#636363"
+                            android:gravity="center_horizontal"
+                            android:textColor="#d5d5d5"
+                            android:textSize="16sp" />
+
                         <TextView
+                            android:id="@+id/req5"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="0"
+                            android:layout_gravity="right"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo Local"
+                            android:textAlignment="center" />
+
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
-                            android:text="-"
-                            android:textSize="20dp"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_row="1"
+                            android:background="#F6F3EA"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/gol_local3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="-"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/gol_visita3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:id="@+id/gol_visita3"
-                            android:padding="10dp"
-                            android:textSize="20dp"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
+                            android:id="@+id/req6"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo visitante"
+                            android:textAlignment="center"></TextView>
 
-                    <TextView
-                        android:id="@+id/req6"
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:layout_column="2"
-                        android:layout_gravity="center"
-                        android:text="Equipo visitante"
-                        android:gravity="center"
-                        android:layout_row="1"></TextView>
+                    </GridLayout>
 
-                </GridLayout>
+                    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
 
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:id="@+id/ganador_4"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:id="@+id/req7"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:gravity="center"
-                        android:text="Equipo Local"
-                        android:layout_gravity="right"
-                        />
-
-
-                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#F6F3EA"
                         android:layout_gravity="center"
-                        android:layout_column="1"
-                        android:layout_row="1"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:orientation="horizontal">
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="4">
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:textSize="20dp"
-                            android:id="@+id/gol_local4"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:id="@+id/ganador_4"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_columnSpan="3"
+                            android:layout_row="0"
+                            android:background="#636363"
+                            android:gravity="center_horizontal"
+                            android:textColor="#d5d5d5"
+                            android:textSize="16sp" />
+
                         <TextView
+                            android:id="@+id/req7"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="0"
+                            android:layout_gravity="right"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo Local"
+                            android:textAlignment="center" />
+
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
-                            android:text="-"
-                            android:textSize="20dp"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_row="1"
+                            android:background="#F6F3EA"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/gol_local4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="-"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/gol_visita4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:id="@+id/gol_visita4"
-                            android:padding="10dp"
-                            android:textSize="20dp"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
+                            android:id="@+id/req8"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo visitante"
+                            android:textAlignment="center"></TextView>
 
-                    <TextView
-                        android:id="@+id/req8"
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:layout_column="2"
-                        android:layout_gravity="center"
-                        android:text="Equipo visitante"
-                        android:gravity="center"
-                        android:layout_row="1"></TextView>
+                    </GridLayout>
 
-                </GridLayout>
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
+                    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:id="@+id/ganador_5"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:id="@+id/req9"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:gravity="center"
-                        android:text="Equipo Local"
-                        android:layout_gravity="right"
-                        />
-
-
-                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#F6F3EA"
                         android:layout_gravity="center"
-                        android:layout_column="1"
-                        android:layout_row="1"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:orientation="horizontal">
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="4">
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:textSize="20dp"
-                            android:id="@+id/gol_local5"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:id="@+id/ganador_5"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_columnSpan="3"
+                            android:layout_row="0"
+                            android:background="#636363"
+                            android:gravity="center_horizontal"
+                            android:textColor="#d5d5d5"
+                            android:textSize="16sp" />
+
                         <TextView
+                            android:id="@+id/req9"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="0"
+                            android:layout_gravity="right"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo Local"
+                            android:textAlignment="center" />
+
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
-                            android:text="-"
-                            android:textSize="20dp"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_row="1"
+                            android:background="#F6F3EA"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/gol_local5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="-"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/gol_visita5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:id="@+id/gol_visita5"
-                            android:padding="10dp"
-                            android:textSize="20dp"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
+                            android:id="@+id/req10"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo visitante"></TextView>
 
-                    <TextView
-                        android:id="@+id/req10"
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:layout_column="2"
-                        android:layout_gravity="center"
-                        android:text="Equipo visitante"
-                        android:gravity="center"
-                        android:layout_row="1"></TextView>
+                    </GridLayout>
 
-                </GridLayout>
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
+                    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
-
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="match_parent"
-                        android:id="@+id/ganador_6"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:id="@+id/req11"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:gravity="center"
-                        android:text="Equipo Local"
-                        android:layout_gravity="right"
-                        />
-
-
-                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#F6F3EA"
                         android:layout_gravity="center"
-                        android:layout_column="1"
-                        android:layout_row="1"
-                        android:padding="10dp"
-                        android:gravity="center"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:orientation="horizontal">
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="4">
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:textSize="20dp"
-                            android:id="@+id/gol_local6"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:id="@+id/ganador_6"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_columnSpan="3"
+                            android:layout_row="0"
+                            android:background="#636363"
+                            android:gravity="center_horizontal"
+                            android:textColor="#d5d5d5"
+                            android:textSize="16sp" />
+
                         <TextView
+                            android:id="@+id/req11"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="0"
+                            android:layout_gravity="right"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:textAlignment="center"
+                            android:text="Equipo Local" />
+
+
+                        <LinearLayout
                             android:layout_width="wrap_content"
-                            android:text="-"
-                            android:textSize="20dp"
-                            android:padding="10dp"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_row="1"
+                            android:background="#F6F3EA"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/gol_local6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="-"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/gol_visita6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="0"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
                         <TextView
-                            android:layout_width="match_parent"
-                            android:text="0"
-                            android:id="@+id/gol_visita6"
-                            android:padding="10dp"
-                            android:textSize="20dp"
-                            android:layout_height="wrap_content" />
-                    </LinearLayout>
+                            android:id="@+id/req12"
+                            android:layout_width="90dp"
+                            android:layout_height="64dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center"
+                            android:layout_row="1"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:scaleType="fitXY"
+                            android:text="Equipo visitante"></TextView>
 
-                    <TextView
-                        android:id="@+id/req12"
-                        android:layout_width="90dp"
-                        android:textAlignment="center"
-                        android:layout_height="64dp"
-                        android:scaleType="fitXY"
-                        android:layout_column="2"
-                        android:layout_gravity="center"
-                        android:text="Equipo visitante"
-                        android:gravity="center"
-                        android:layout_row="1"></TextView>
+                    </GridLayout>
 
-                </GridLayout>
-
+                </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
-
-    </LinearLayout>
-
+    </ScrollView>
 </FrameLayout>

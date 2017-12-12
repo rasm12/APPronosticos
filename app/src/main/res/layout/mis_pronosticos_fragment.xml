@@ -34,6 +34,301 @@
 
                 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     xmlns:tools="http://schemas.android.com/tools"
+                    
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="Equipo Local"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:id="@+id/MPEq1"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:id="@+id/MPEq2"
+                        android:layout_row="2"
+                        android:text="Equipo Visitante"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_row="2"
+                        android:id="@+id/MPR1"
+                        android:text="Resultado"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18sp" />
+
+                </GridLayout>
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="Equipo Local"
+                        android:id="@+id/MPEq3"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:id="@+id/MPEq4"
+                        android:text="Equipo Visitante"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_row="2"
+                        android:id="@+id/MPR2"
+                        android:text="Resultado"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18sp" />
+
+                </GridLayout>
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:id="@+id/MPEq6"
+                        android:layout_row="1"
+                        android:text="Equipo Local"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:text="Equipo Visitante"
+                        android:id="@+id/MPEq7"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_row="2"
+                        android:text="Resultado"
+                        android:id="@+id/MPR3"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18sp" />
+
+                </GridLayout>
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:text="Equipo Local"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:id="@+id/MPEq8"
+                        android:text="Equipo Visitante"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_row="2"
+                        android:text="Resultado"
+                        android:id="@+id/MPR4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18sp" />
+
+                </GridLayout>
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_columnSpan="3"
+                        android:background="#636363"
+                        android:textColor="#d5d5d5"
+                        android:gravity="center_horizontal"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:id="@+id/MPEq9"
+                        android:text="Equipo Local"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:id="@+id/MPEq10"
+                        android:text="Equipo Visitante"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#82837d"
+                        android:textSize="14sp" />
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_row="2"
+                        android:text="Resultado"
+                        android:id="@+id/MPR5"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#bcd88d"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18sp" />
+
+                </GridLayout>
+                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
                     android:id="@+id/GridLayout1"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -44,7 +339,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Match 1"
+                        android:text=""
                         android:layout_column="0"
                         android:layout_row="0"
                         android:layout_columnSpan="3"
@@ -58,7 +353,8 @@
                         android:layout_height="wrap_content"
                         android:layout_column="0"
                         android:layout_row="1"
-                        android:text="Cerro Porteño"
+                        android:id="@+id/MPEq11"
+                        android:text="Equipo Local"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="#82837d"
                         android:textSize="14sp" />
@@ -68,353 +364,35 @@
                         android:layout_height="wrap_content"
                         android:layout_column="0"
                         android:layout_row="2"
-                        android:text="Libertad"
+                        android:id="@+id/MPEq12"
+                        android:text="Equipo Visitante"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="#82837d"
                         android:textSize="14sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="3"
-                        android:text="0-0"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#bcd88d"
-                        android:textSize="18sp" />
 
-                    <Spinner
-                        android:id="@+id/spinner"
+
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_column="1"
                         android:layout_columnSpan="2"
-                        android:layout_gravity="center"
                         android:layout_row="2"
-                        android:entries="@array/combo" />
-
-                </GridLayout>
-
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
-                    android:id="@+id/GridLayout2"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Match 2"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:text="Cerro Porteño"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="2"
-                        android:text="Libertad"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="3"
-                        android:text="0-0"
+                        android:text="Resultado"
+                        android:id="@+id/MPR6"
                         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                         android:textColor="#bcd88d"
+                        android:layout_gravity="center_horizontal"
                         android:textSize="18sp" />
-
-                    <Spinner
-                        android:id="@+id/spinner2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1"
-                        android:layout_columnSpan="2"
-                        android:layout_gravity="center"
-                        android:layout_row="2"
-                        android:entries="@array/combo" />
 
                 </GridLayout>
 
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
-                    android:id="@+id/GridLayout3"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Match 3"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:text="Cerro Porteño"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="2"
-                        android:text="Libertad"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="3"
-                        android:text="0-0"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#bcd88d"
-                        android:textSize="18sp" />
-
-                    <Spinner
-                        android:id="@+id/spinner3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1"
-                        android:layout_columnSpan="2"
-                        android:layout_gravity="center"
-                        android:layout_row="2"
-                        android:entries="@array/combo" />
-                </GridLayout>
-
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
-                    android:id="@+id/GridLayout4"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
-
-                    <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Match 4"
-                    android:layout_column="0"
-                    android:layout_row="0"
-                    android:layout_columnSpan="3"
-                    android:background="#636363"
-                    android:textColor="#d5d5d5"
-                    android:gravity="center_horizontal"
-                    android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:text="Cerro Porteño"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="2"
-                        android:text="Libertad"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="3"
-                        android:text="0-0"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#bcd88d"
-                        android:textSize="18sp" />
-
-                    <Spinner
-                        android:id="@+id/spinner4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1"
-                        android:layout_columnSpan="2"
-                        android:layout_gravity="center"
-                        android:layout_row="2"
-                        android:entries="@array/combo" />
-
-                </GridLayout>
-
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
-                    android:id="@+id/GridLayout5"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Match 5"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:text="Cerro Porteño"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="2"
-                        android:text="Libertad"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="3"
-                        android:text="0-0"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#bcd88d"
-                        android:textSize="18sp" />
-
-                    <Spinner
-                        android:id="@+id/spinner5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1"
-                        android:layout_columnSpan="2"
-                        android:layout_gravity="center"
-                        android:layout_row="2"
-                        android:entries="@array/combo" />
-
-                </GridLayout>
-
-                <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:tools="http://schemas.android.com/tools"
-                    android:id="@+id/GridLayout6"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:columnCount="3"
-                    android:orientation="horizontal"
-                    android:rowCount="4">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Match 6"
-                        android:layout_column="0"
-                        android:layout_row="0"
-                        android:layout_columnSpan="3"
-                        android:background="#636363"
-                        android:textColor="#d5d5d5"
-                        android:gravity="center_horizontal"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="1"
-                        android:text="Cerro Porteño"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="2"
-                        android:text="Libertad"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#82837d"
-                        android:textSize="14sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="0"
-                        android:layout_row="3"
-                        android:text="0-0"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                        android:textColor="#bcd88d"
-                        android:textSize="18sp" />
-
-                    <Spinner
-                        android:id="@+id/spinner6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1"
-                        android:layout_columnSpan="2"
-                        android:layout_gravity="center"
-                        android:layout_row="2"
-                        android:entries="@array/combo" />
-
-                </GridLayout>
 
             </LinearLayout>
         </LinearLayout>
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:indeterminate="true" />
+
     </LinearLayout>
 
 </FrameLayout>
